@@ -1,3 +1,3 @@
 import { ethers } from "hardhat";
 
-console.log(ethers.dnsEncode('chomtana.test'))
+console.log(ethers.dnsEncode('stani.lens'))
