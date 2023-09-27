@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const registry = await ethers.deployContract("ENSRegistry");
+  const registry = await ethers.deployContract("ENSRegistry", { gasPrice: 10000000 });
   await registry.waitForDeployment();
   console.log("ENSRegistry", await registry.getAddress());
 

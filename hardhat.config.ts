@@ -35,6 +35,11 @@ const config: HardhatUserConfig = {
       chainId: 137,
       accounts: real_accounts,
     },
+    optimism_goerli: {
+      url: `https://goerli.optimism.io`,
+      chainId: 420,
+      accounts: real_accounts,
+    },
   },
   etherscan: {
     apiKey: process.env.ETHERSCAN_KEY,
